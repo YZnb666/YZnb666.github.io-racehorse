@@ -3,9 +3,9 @@ function next(){
 	var horse = mui('.horse')[num];
 	var left = horse.getBoundingClientRect().left
 	var timer = null
-	horse.style.left = (left + 20) + 'px';
+	horse.style.left = (left + 10) + 'px';
 	left = horse.getBoundingClientRect().left
-	if (left == 960){
+	if (left == 660){
 		var winhorse = num + 1
 		alert(winhorse + ' horse won!')
 		clearTimeout(timer)
